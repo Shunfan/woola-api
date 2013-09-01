@@ -32,3 +32,7 @@ ExistEmailMessage = "The email address has been taken"
 BadLoginMessage = "Bad login"
 AccessDeniedMessage = "Access denied"
 BlankParamsMessage = "Blank Parameters are provided"
+
+# Other API
+VirusTotalAPI = 
+WOTAPI = 

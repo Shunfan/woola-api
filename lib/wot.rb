@@ -4,8 +4,6 @@ require 'faraday'
 class WOT
   @queue = :woola_api_wot
 
-  API_KEY = 'e8044bb947ffea086ebfc50df2d6dc3a4b566206'
-
   attr_reader :host
 
   def initialize(host)
@@ -28,7 +26,7 @@ class WOT
   end
 
   def get_report
-    data = {:hosts => "#{@host}/", :key => API_KEY}
+    data = {:hosts => "#{@host}/", :key => WOTAPI}
     JSON.parse(@connection.get('/0.4/public_link_json2', data).body)
   end
 end

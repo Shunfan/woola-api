@@ -1,6 +1,6 @@
-require './app'
+require './woola'
 require 'resque/server'
 
 run Rack::URLMap.new \
-  "/"       => App,
+  "/"       => Woola,
   "/resque" => Resque::Server.new

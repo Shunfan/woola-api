@@ -1,4 +1,4 @@
-require './app'
+require './woola'
 require 'resque/tasks'
 
 require 'rake/testtask'

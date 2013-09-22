@@ -8,7 +8,7 @@ MinUsernameLength = 3
 MaxUsernameLength = 12
 MinPasswordLength = 6
 MaxPasswordLength = 18
-SaltLength = 50
+SaltLength = 20
 TokenLength = 40
 
 # Case Sensitivity
@@ -24,6 +24,7 @@ UsernameRegExp = /^[a-z#{"A-Z" if UsernameCaseSensitivity}0-9_-]{#{MinUsernameLe
 PasswordRegExp = /^[\w\W]{#{MinPasswordLength},#{MaxPasswordLength}}$/
 
 # Error message for validation
+NotFoundMessage = "Not Found"
 InvalidUsernameMessage = "Invalid username, the length of it should be #{MinUsernameLength}~#{MaxUsernameLength}"
 InvalidEmailMessage = "Invalid email address"
 InvalidPasswordMessage = "Invalid password, the length of it should be #{MinPasswordLength}~#{MaxPasswordLength}"
@@ -34,5 +35,5 @@ AccessDeniedMessage = "Access denied"
 BlankParamsMessage = "Blank Parameters are provided"
 
 # Other API
-VirusTotalAPI = 
-WOTAPI = 
+VirusTotalAPI = ""
+WOTAPI = ""
